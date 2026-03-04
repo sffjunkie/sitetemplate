@@ -5,14 +5,12 @@
     { self, ... }:
     {
       templates = {
-        trivial = {
-          path = ./templates/trivial;
-          description = "A trivial template that does nothing much.";
+        uv2nix = {
+          path = ./python/uv2nix.nix;
+          description = "A uv2nix project";
         };
 
-        uv2nix = (import ./python/uv2nix);
-
-        defaultTemplate = self.templates.trivial;
+        defaultTemplate = self.templates.uv2nix;
       };
     };
 }
