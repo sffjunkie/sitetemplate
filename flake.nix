@@ -6,7 +6,7 @@
     {
       templates = {
         uv2nix = {
-          path = ./python/uv2nix.nix;
+          path = ./python/uv2nix;
           description = "A uv2nix project";
         };
 
